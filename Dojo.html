@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Dev Backend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Adicionando Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-xl tracking-wider">
+                    <span class="text-brand-500">&lt;/&gt;</span> DEV.
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#sobre" class="hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
+                        <a href="#skills" class="hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">Habilidades</a>
+                        <a href="#projetos" class="hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">Projetos</a>
+                        <a href="#contato" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="sobre" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Construindo sistemas <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-cyan-400">robustos e escaláveis.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Desenvolvedor de Software focado no ecossistema Backend. Especializado em arquitetar integrações, gerenciar migrações de dados complexas e criar APIs eficientes.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#projetos" class="bg-brand-600 hover:bg-brand-500 text-white font-semibold py-3 px-8 rounded-lg transition-all shadow-lg shadow-brand-500/30">
+                    Ver Projetos
+                </a>
+                <a href="#contato" class="bg-gray-800 hover:bg-gray-700 text-gray-300 font-semibold py-3 px-8 rounded-lg transition-all border border-gray-700">
+                    Falar comigo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-950 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-100">Tech Stack</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center hover:border-brand-500 transition-colors group">
+                    <i class="fa-brands fa-java text-4xl text-gray-400 group-hover:text-brand-500 mb-4 transition-colors"></i>
+                    <h3 class="font-semibold text-lg">Java / Spring Boot</h3>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center hover:border-brand-500 transition-colors group">
+                    <i class="fa-brands fa-python text-4xl text-gray-400 group-hover:text-brand-500 mb-4 transition-colors"></i>
+                    <h3 class="font-semibold text-lg">Python</h3>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center hover:border-brand-500 transition-colors group">
+                    <i class="fa-solid fa-database text-4xl text-gray-400 group-hover:text-brand-500 mb-4 transition-colors"></i>
+                    <h3 class="font-semibold text-lg">Oracle PL/SQL</h3>
+                </div>
+                <!-- Skill 4 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center hover:border-brand-500 transition-colors group">
+                    <i class="fa-brands fa-docker text-4xl text-gray-400 group-hover:text-brand-500 mb-4 transition-colors"></i>
+                    <h3 class="font-semibold text-lg">Docker</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-100">Projetos em Destaque</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Projeto 1 -->
+                <div class="bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-600 transition-all">
+                    <div class="p-8">
+                        <div class="text-brand-500 text-sm font-bold tracking-wider uppercase mb-2">Engenharia de Dados</div>
+                        <h3 class="text-2xl font-bold mb-3">Migração de Banco de Dados</h3>
+                        <p class="text-gray-400 mb-6 line-clamp-3">
+                            Planejamento e execução de migração de dados em grande escala para ambiente Oracle, utilizando procedures otimizadas e triggers para garantir a integridade referencial dos dados durante a transição de sistemas legado.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-900 text-xs rounded-full border border-gray-700">PL/SQL</span>
+                            <span class="px-3 py-1 bg-gray-900 text-xs rounded-full border border-gray-700">Oracle</span>
+                            <span class="px-3 py-1 bg-gray-900 text-xs rounded-full border border-gray-700">Scripts</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-brand-500 hover:text-brand-400 font-medium">
+                            Ver detalhes <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-600 transition-all">
+                    <div class="p-8">
+                        <div class="text-brand-500 text-sm font-bold tracking-wider uppercase mb-2">Desenvolvimento Backend</div>
+                        <h3 class="text-2xl font-bold mb-3">Microsserviços Resilientes</h3>
+                        <p class="text-gray-400 mb-6 line-clamp-3">
+                            Desenvolvimento de APIs RESTful estruturadas, mapeamento avançado de relações utilizando anotações JPA/Hibernate e conteinerização da aplicação para esteiras de CI/CD.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-900 text-xs rounded-full border border-gray-700">Spring Boot</span>
+                            <span class="px-3 py-1 bg-gray-900 text-xs rounded-full border border-gray-700">JPA/Hibernate</span>
+                            <span class="px-3 py-1 bg-gray-900 text-xs rounded-full border border-gray-700">Docker</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-brand-500 hover:text-brand-400 font-medium">
+                            Ver detalhes <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contato" class="bg-gray-950 border-t border-gray-900 py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Vamos conversar?</h2>
+            <p class="text-gray-400 mb-8">Aberto a novos desafios em desenvolvimento e arquitetura de sistemas.</p>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">GitHub</span>
+                    <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fa-brands fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">Email</span>
+                    <i class="fa-solid fa-envelope text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-600 text-sm">
+                &copy; 2026. Feito com HTML & Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
